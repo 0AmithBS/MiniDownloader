@@ -1,0 +1,31 @@
+active: false
+current: null
+history:
+- completed_at: 1746358619
+  requested_by: 7824416761
+  timestamp: 1746358597
+  title: Shortest Videos on Youtube (Parts 1-10)
+  url: https://youtu.be/wGyUP4AlZ6I?si=Ltd2VNB1-RH2kLfw
+  user_mention: Susha
+- completed_at: 1746358521
+  requested_by: 7817767205
+  timestamp: 1746358494
+  title: Hey, are you okay?
+  url: https://youtu.be/ES8BDkl5ssI?si=BIUn2DWnCEanhO9s
+  user_mention: Over
+- completed_at: 1746355952
+  requested_by: 7824416761
+  timestamp: 1746355930
+  title: Shortest Videos on Youtube (Parts 1-10)
+  url: https://youtu.be/wGyUP4AlZ6I?si=apv6wQ9WyUrrRC-5
+  user_mention: Susha
+- completed_at: 1746352570
+  requested_by: 6136418873
+  timestamp: 1746352547
+  title: Shortest Videos on Youtube (Parts 1-10)
+  url: https://youtu.be/wGyUP4AlZ6I?si=KZG1DBGTYeJQMOhc
+  user_mention: '@notminoxity'
+queue: []
+settings:
+  max_history_size: 20
+  max_queue_size: 10
