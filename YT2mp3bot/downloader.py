@@ -92,7 +92,7 @@ async def url(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     # --- Download logic START ---
     # Set output folder and filename
-    output_dir = "/storage/emulated/0/Download/yt-rips"
+    output_dir = "downloads"
     os.makedirs(output_dir, exist_ok=True)
     output_template = os.path.join(output_dir, f"{user_id}_%(title)s.%(ext)s")
 
