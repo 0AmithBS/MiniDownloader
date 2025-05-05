@@ -8,18 +8,17 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, JobQu
 import concurrent.futures
 import yaml
 from . import download_queue
+from dotenv import load_dotenv
 
-
-try:
-  from tg_token import TG_TOKEN
-except ImportError:
-  print('''
-Rename the file tg_token_example.py to tg_token.py and make sure you gather
-a Telegram bot token from @BotFather and place it in the file.
-The token should be a string and look like this:
-TG_TOKEN = '0123456789:Aa1Bb_Cc2Dd3Ee4Ff5Gg_-6Hh7Ii8JjKk9L'
+load_dotenv()
+TG_TOKEN = os.getenv('TG_TOKEN')
+if not TG_TOKEN:
+    print('''
+Please set the environment variable TG_TOKEN.
+Create a .env file in your project root with:
+TG_TOKEN=your-telegram-bot-token-here
 ''')
-  sys.exit(1)
+    sys.exit(1)
 
 '''
 Feel free to choose a different path for the downloaded files.
